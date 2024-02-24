@@ -1,0 +1,14 @@
+<head>
+    
+    <!-- <script href="./public_js/mqtt.js"></script> -->
+    <script src="https://unpkg.com/mqtt@5.3.4/dist/mqtt.min.js"></script>
+
+    <script>
+         const subscriber =mqtt.connect("ws://localhost:8883")
+         subscriber.on("connect",(err)=>{
+            if(!err){
+                alert("connected")         
+            }
+         })
+    </script>
+</head>
